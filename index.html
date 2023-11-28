@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>My First HTML Page</title>
+ <link rel="stylesheet" href="style.css">
+ <script 
+src="https://rawgit.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+</head>
+<body>
+ <h1>Welcome to My Website!</h1>
+ 
+ <p>This is my first HTML page. I'm excited to learn web development!</p>
+ 
+ <h2>Things to Learn:</h2>
+ 
+ <ul>
+ <li><strong>HTML:</strong> The structure of a web page.</li>
+ <li><strong>CSS:</strong> Styling and layout of web pages.</li>
+ <li><strong>JavaScript:</strong> Adding interactivity to web pages.</li>
+ </ul>
+ 
+ <p>Check out the <a href="https://www.sbrcinfosys.com/"><em>SBRC</em></a> for more 
+information.</p>
+ 
+ <img id="Image"
+src="https://t3.ftcdn.net/jpg/03/12/44/34/360_F_312443477_5lxDV8QHzXyOwMH4FxLmU4
+Y93h12NZEJ.jpg" alt="Placeholder Image">
+ 
+<div id="button">
+ <button onclick="generatePDF()">Generate PDF</button>
+ 
+ <script>
+ function generatePDF() {
+ var element = document.body;
+ html2pdf(element);
+ }
+ </script>
+</div>
+</body>
+</html>
